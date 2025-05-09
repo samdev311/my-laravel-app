@@ -153,11 +153,27 @@ top:30px;
     height: 40vh;
     background-color: darkgray;
     margin-top: 150vh;
+    display: inline-flex;
 }
-.usefull{
+.classic{
+    width: 20%;
+    height:30vh;
+    background-color: transparent;
+    margin-left: 20vh;
+    margin-top: 6vh;
 
+}.classic h1{
+    text-align: center; 
 }
-
+.classic p{
+    text-align: center;
+    margin-top:0;
+}
+.classic img{
+    width: 14%;
+    height: 6vh;
+    margin-left: 12vh;
+}
     </style>
 </head>
 <body>
@@ -188,11 +204,23 @@ top:30px;
         <div class="or"><img src="{{asset('images/chrld6.jpg')}}" alt=""><p>South sudan chirldren</p><button>Donate now</button></div><div class="or"><img src="{{asset('images/chirld7.jpg')}}" alt=""><p>South sudan chirldren</p><button>Donate now</button></div>
     </div>
 </div>
-<div class="footer"><div class="usefull">
-<h1>Usefull link</h1><br>
-<h2>Whatsapp</h2><br>
-<h3>Facebook</h3><br>
-<h4>Instagram</h4>
+<div class="footer">
+<div class="classic">
+<h1>Contact us</h1><img src="{{asset('images/telegram.png')}}" alt=""><br>
+
+<img src="{{asset('images/watsapp.png')}}" alt="">
+</div>
+
+<div class="classic">
+<h1>Usefull link</h1><img src="{{asset('images/facebook.png')}}" alt=""><br>
+<br>
+<img src="{{asset('images/ig.png')}}" alt="">
+
+</div>
+<div class="classic">
+<h1>Connect with us</h1><img src="{{asset('images/git.png')}}" alt=""><br>
+
+<img src="{{asset('images/google.png')}}" alt="">
 </div>
 
 

@@ -103,8 +103,26 @@ form button{
     border:3px gainsboro solid;
     border-radius: 4px;
 }.footer{
-    
+    width: 100%;
+    height: 40vh;
+    background-color: darkgray;
+    margin-top: 150vh;
+    display: inline-flex;
 }
+.classic{
+    width: 20%;
+    height:30vh;
+    background-color: antiquewhite;
+    margin-left: 20vh;
+    margin-top: 6vh;
+
+}.classic h1{
+    text-align: center; 
+}
+.classic p{
+    text-align: center;
+}
+
     </style>
 </head>
 <body>
@@ -147,10 +165,22 @@ form button{
 
     </div>
     <div class="footer">
-
-
-    </div>
-
+        <div class="classic">
+        <h1>Contact us</h1><br>
+        <p>0798771954</p>
+        </div>
+        
+        <div class="classic">
+        <h1>Usefull link</h1><br>
+        <p>Join us on facebook</p>
+        </div>
+        <div class="classic">
+        <h1>Connect with us</h1><br>
+        <p>Samdev311@gmail.com</p>
+        </div>
+        
+        
+        </div>
     
     
 </body>
