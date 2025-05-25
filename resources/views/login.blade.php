@@ -12,9 +12,11 @@
         }
 .header{
     width: 100%;
-    height: 17vh;
+    height: 20vh;
     background-color:rgb(57, 73, 87);
+    margin-top: -40vh;
     position: fixed;
+
 
 }
 .header a{
@@ -24,7 +26,7 @@ margin-left:0vh;
 }
 .header h1{
     margin-left: 50vh;
-    margin-top: 20px;
+    margin-top: -23px;
     color: white;
 }
 .link{
@@ -57,11 +59,10 @@ top:30px;
     color: white;
 }.form{
     width: 50%;
-    height: 80vh;
+    height: 60vh;
     background-color: ;
     margin-left: 50vh;
-    position: absolute;
-    top:30%;
+   margin-top: 40vh;
     align-content: center;
     
   background-image: url('images/chrld5.jpg'); 
@@ -102,10 +103,17 @@ form button{
     background-color:rgb(57, 73, 87); 
     border:3px gainsboro solid;
     border-radius: 4px;
-}.classic{
+}.footer{
+    width: 100%;
+    height: 40vh;
+    background-color: darkgray;
+    margin-top: 6vh;
+    display: inline-flex;
+}
+.classic{
     width: 20%;
     height:30vh;
-    background-color: antiquewhite;
+    background-color: transparent;
     margin-left: 20vh;
     margin-top: 6vh;
 
@@ -114,6 +122,12 @@ form button{
 }
 .classic p{
     text-align: center;
+    margin-top:0;
+}
+.classic img{
+    width: 14%;
+    height: 6vh;
+    margin-left: 12vh;
 }
     </style>
 </head>
@@ -127,9 +141,9 @@ form button{
         <div class="link">
     <a href="/task">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <a href="#">Service</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="#">Donate</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="#">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <button>Login</button>&nbsp;&nbsp;&nbsp;
+    <a href="/donate">Donate</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    <a href="/signup"><button>Sign up</button></a>&nbsp;&nbsp;&nbsp;
     </div>
     </div> 
     <div class="form">
@@ -157,23 +171,25 @@ form button{
     </div>
     <div class="footer">
         <div class="classic">
-        <h1>Contact us</h1><br>
-        <p>0798771954</p>
+        <h1>Contact us</h1><img src="{{asset('images/telegram.png')}}" alt=""><br>
+        
+        <img src="{{asset('images/watsapp.png')}}" alt="">
         </div>
         
         <div class="classic">
-        <h1>Usefull link</h1><br>
-        <p>Join us on facebook</p>
+        <h1>Usefull link</h1><img src="{{asset('images/facebook.png')}}" alt=""><br>
+        <br>
+        <img src="{{asset('images/ig.png')}}" alt="">
+        
         </div>
         <div class="classic">
-        <h1>Connect with us</h1><br>
-        <p>Samdev311@gmail.com</p>
+        <h1>Connect with us</h1><img src="{{asset('images/git.png')}}" alt=""><br>
+        
+        <img src="{{asset('images/google.png')}}" alt="">
         </div>
         
         
         </div>
-
-    
     
 </body>
 </html>

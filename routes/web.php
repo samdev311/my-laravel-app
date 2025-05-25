@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PaymentController;
 
 Route::get('/', function () {
     return view('task');
@@ -28,3 +29,13 @@ Route::get('/service', function () {
 });
 
 Route::post('/logout', [UserController::class, 'logout']);
+Route::get('/logout',function () {
+    return view('/task');
+});
+Route::get('/donate',function () {
+    return view('/donate');
+});
+Route::post('/payment',[PaymentController::class, 'payment']);
+Route::get('/payment',function (){
+    return view('/donate');
+});

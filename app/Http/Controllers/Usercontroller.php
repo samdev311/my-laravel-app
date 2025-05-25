@@ -37,5 +37,15 @@ class Usercontroller extends Controller
             return "incorrect name or password <a href='/'>go back</a>";
         }
     }
-    
+    public function payment(Request $request){
+        $incoming=$request->validate([
+            'firstname'=>'required',
+            'lastname'=>'required',
+            'coming_from'=>'required',
+            'amaunt_to_pay'=>'required'
+        ]);
+        user::create($incoming);
+        return redirect('/task');
 }
+    }
+    

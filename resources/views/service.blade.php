@@ -84,12 +84,17 @@ color: black;
     margin-left: 20vh;
     margin-top: 12vh;
     height: 40px;
-    border:4px solid black;
+    border:2px solid black;
     border-radius: 5px;
     background-color: none;
     width: 30%;
     font-family: Arial, Helvetica, sans-serif;
 
+}
+.pa button:hover{
+padding: 10px 7px;
+border-radius:5px;
+background-color: rgb(57, 73, 87);
 }
 .footer{
     width: 100%;
@@ -101,7 +106,7 @@ color: black;
 .classic{
     width: 20%;
     height:30vh;
-    background-color: transparent;
+    background-color: none;
     margin-left: 20vh;
     margin-top: 6vh;
 
@@ -125,8 +130,8 @@ color: black;
         <img src="{{asset('images/log1.png')}}" alt="">
         <div class="link">
     <a href="/task">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="#">Donate</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="#">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="/donate">Donate</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   
    <form action="/logout" method="post">
     @csrf
     <button>Logout</button></form> &nbsp;&nbsp;&nbsp;
