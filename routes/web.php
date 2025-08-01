@@ -39,3 +39,6 @@ Route::post('/payment',[PaymentController::class, 'payment']);
 Route::get('/payment',function (){
     return view('/donate');
 });
+Route::get('/button', function (){
+    return view('/donate');
+});
